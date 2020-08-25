@@ -57,4 +57,8 @@ if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
     extract "$MY_DIR"/../$DEVICE/proprietary-files.txt "$SRC"
 fi
 
+# Fix proprietary blobs
+patchelf --remove-needed android.hidl.base@1.0.so \
+        "${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE_COMMON}/proprietary/system/lib/libwfdnative.so"
+
 "$MY_DIR"/setup-makefiles.sh

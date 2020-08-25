@@ -321,6 +321,17 @@ PRODUCT_PACKAGES += \
     wifilogd \
     wcnss_service
 
+# WiFi Display
+PRODUCT_PACKAGES += \
+    vendor.display.config@1.0 \
+    libwfds \
+    libnl \
+    libqdMetaData \
+    libqdMetaData.system
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
+
 PRODUCT_COPY_FILES += \
     kernel/motorola/msm8916/drivers/staging/prima/firmware_bin/WCNSS_cfg.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_cfg.dat \
     kernel/motorola/msm8916/drivers/staging/prima/firmware_bin/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini

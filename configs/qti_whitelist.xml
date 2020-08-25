@@ -34,4 +34,7 @@
     <!-- Whitelist IMS packages from doze -->
     <allow-in-power-save package="org.codeaurora.ims" />
     <allow-in-power-save package="com.qualcomm.qti.ims" />
+	
+    <hidden-api-whitelisted-app package="com.qualcomm.wfd.client" />
+    <hidden-api-whitelisted-app package="com.qualcomm.wfd.service" />
 </config>

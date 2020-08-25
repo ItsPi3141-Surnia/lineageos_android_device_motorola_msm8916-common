@@ -106,12 +106,15 @@ vendor/firmware/a420_pfp.fw
 vendor/firmware/a420_pm4.fw
 
 # Media - from aljeter-OPP27.61-14-4
+lib/libFileMux.so
+lib/libmmosal.so
+lib/libmmrtpdecoder.so
+lib/libmmrtpencoder.so
 vendor/lib/lib-dplmedia.so
 vendor/lib/libI420colorconvert.so
 vendor/lib/libmm-abl.so
 vendor/lib/libmm-abl-oem.so
 vendor/lib/libmm-color-convertor.so
-vendor/lib/libmmosal.so
 vendor/lib/libOmxAacDec.so |25379275b46976031e9160cef918337ae6b53759
 vendor/lib/libOmxEvrcDec.so |cc249631100927c133c575e5cb2136b5af758f15
 vendor/lib/libOmxQcelp13Dec.so |9654dac9b4e306d522f1332ff0fbfd71a45dfe17
@@ -149,7 +152,6 @@ vendor/lib/libdiag.so |011dcda645c18a7ee2bb9479c92b3be03392b4ec
 vendor/lib/libDiagService.so |6df48e1056d61dd9b067c0c40052f469b8cefc99
 vendor/lib/libdsi_netctrl.so |b45ee71c61e7338b976f000fa236c2ad12a7a23b
 vendor/lib/libdsutils.so |b201a9690c524c7892ac5eef4ce89bcb51dbea21
-vendor/lib/libFileMux.so |8ef35c03c3a057c360f3de702f8deda941582531
 vendor/lib/libidl.so |9d79cd423a9c3d8e9f6282ffb83b1462b5940837
 vendor/lib/libqcci_legacy.so |282bccd332913969837b91e00125ed58daeaf65c
 vendor/lib/libqdi.so |b9160277b51169211dd571d305e111f849f887ee
@@ -243,6 +245,42 @@ vendor/lib/libthermalioctl.so
 
 # Time services - from channel-QPY30.52-2
 vendor/lib/libtime_genoff.so |b6e2593eb50be2b1e6544b3f2763d138bfa291e4
+
+# WiFi Display
+bin/sigma_miracasthalservice
+bin/wfdservice
+etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc
+etc/init/wfdservice.rc
+etc/wfdconfig.xml
+etc/wfdconfigsink.xml
+-framework/WfdCommon.jar
+lib/com.qualcomm.qti.wifidisplayhal@1.0.so
+lib/libaacwrapper
+lib/libdisplayconfig
+lib/libmmparser_lite.so
+lib/libOmxMux.so
+lib/libmiracastsystem
+lib/libwfdavenhancements.so
+lib/libwfdcommonutils.so
+lib/libwfdconfigutils.so
+lib/libwfdmminterface.so
+lib/libwfdmmsink.so
+lib/libwfdcodecv4l2
+lib/libwfdmmsrc_system.so
+lib/libwfdrtsp.so
+lib/libwfdservice.so
+lib/libwfdsinksm.so
+lib/libwfdnative.so
+lib/libwfdsm.so
+lib/libwfduibcinterface.so
+lib/libwfduibcsink.so
+lib/libwfduibcsinkinterface.so
+lib/libwfduibcsrc.so
+lib/libwfduibcsrcinterface.so
+lib/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so
+-priv-app/WfdService/WfdService.apk
+product/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
+product/lib/vendor.qti.hardware.sigma_miracast@1.0.so
 
 # Venus (media) firmware
 vendor/firmware/venus.b00
