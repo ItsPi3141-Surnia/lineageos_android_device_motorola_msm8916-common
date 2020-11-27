@@ -94,7 +94,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qcril_uim_vcc_feature=1 \
     persist.vendor.radio.0x9e_not_callname=1 \
     persist.vendor.radio.add_power_save=1 \
-    persist.vendor.radio.aosp_usr_pref_sel=true \
     persist.radio.apn_delay=5000 \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.custom_ecc=1 \
@@ -115,8 +114,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.snapshot_enabled=1 \
     rild.libargs=-d/dev/smd0 \
     rild.libpath=/vendor/lib/libril-qc-qmi-1.so \
-    ro.telephony.call_ring.multiple=false \
-    persist.radio.aosp_usr_pref_sel=true
+    ro.telephony.call_ring.multiple=false
 
 # Security patch level
 PRODUCT_PROPERTY_OVERRIDES += \

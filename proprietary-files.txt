@@ -164,9 +164,6 @@ vendor/lib/libqmi_encdec.so |39167d6933012e147bf9dc153154ff2f105354af
 vendor/lib/libqmiservices.so |8df18817c510a7d79fab93c10a02205debec5b97
 vendor/lib/libsmemlog.so |c632a70764ee1d6416ce1758f4d10cd6983d204d
 
-# Radio - from cmi RKQ1.200710.002-V12.1.2.0.RJACNXM (modified)
--system_ext/framework/qti-telephony-common.jar |6ef78677c097072dbf44eb8fcc938391053ead3b
-
 # Radio - from LA.UM.8.6.r1-02600-89xx.0
 -system/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk |71d083671c3ea4cd5e287a63fb254bb0ab60ed20
 
