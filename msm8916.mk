@@ -204,7 +204,7 @@ PRODUCT_PACKAGES += \
     libhwbinder.vendor
 
 # Telephony
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     ims-ext-common_system \
     ims_ext_common.xml \
     qti-telephony-hidl-wrapper \
@@ -213,7 +213,7 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     telephony-ext
 
-PRODUCT_BOOT_JARS += \
+#PRODUCT_BOOT_JARS += \
     ims-ext-common_system \
     telephony-ext
 
