@@ -59,6 +59,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8916
 TARGET_KERNEL_RECOVERY_CONFIG := $(TARGET_DEVICE)_recovery_defconfig
+TARGET_KERNEL_CLANG_COMPILE := false
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-smd"
