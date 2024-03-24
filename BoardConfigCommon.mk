@@ -29,6 +29,10 @@ TARGET_SPECIFIC_HEADER_PATH := $(VENDOR_PATH)/include
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8916
+# Need to add msm8916 to the list
+# Otherwise, hardware qcom media won't build libOmxCore and libstagefrighthw
+QCOM_BOARD_PLATFORMS += \
+	msm8916
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8916

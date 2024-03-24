@@ -97,7 +97,7 @@ PRODUCT_COPY_FILES +=  \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0.vendor
+    android.hardware.bluetooth@1.0
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -122,7 +122,7 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.4-service.clearkey \
-    android.hardware.drm@1.3.vendor
+    android.hardware.drm@1.3
 
 # Display
 PRODUCT_PACKAGES += \
@@ -206,9 +206,9 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.0-service-qti.rc \
-    android.hardware.keymaster@4.1.vendor \
+    android.hardware.keymaster@4.1 \
     android.hardware.keymaster@4.1-service
+    # android.hardware.keymaster@4.0-service.rc 
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -231,7 +231,7 @@ endif
 
 # Netmgrd
 PRODUCT_PACKAGES += \
-    android.system.net.netd@1.1.vendor
+    android.system.net.netd@1.1
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -247,8 +247,9 @@ PRODUCT_PACKAGES += \
 
 # Power HAL
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
+	android.hardware.power@1.0-service \
     android.hardware.power.stats@1.0-service.mock
+    # android.hardware.power-service-qti 
 
 # Protobuf
 PRODUCT_COPY_FILES += \
@@ -279,10 +280,10 @@ PRODUCT_PACKAGES += \
     libxml2
 
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.6.vendor \
-    android.hardware.radio.config@1.3.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.secure_element@1.2.vendor
+    android.hardware.radio@1.6 \
+    android.hardware.radio.config@1.3 \
+    android.hardware.radio.deprecated@1.0 \
+    android.hardware.secure_element@1.2
 
 # Seccomp
 PRODUCT_COPY_FILES += \
